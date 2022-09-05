@@ -119,7 +119,6 @@ def revise_table(
         df2_.loc[:, 'customer_id'] = tmp
         return df2_
 
-
 def add_tables_safely(
     table_name: Literal['demographic', 'debt', 'payment'],
     engine: sqlalchemy.engine.base.Engine,
