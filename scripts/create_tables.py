@@ -17,8 +17,8 @@ sql_demo = '''
       );
       '''
 
-sql_debt = '''
-      CREATE TABLE IF NOT EXISTS debt (
+sql_payment = '''
+      CREATE TABLE IF NOT EXISTS payment (
         customer_id INTEGER Not Null PRIMARY KEY,
         seriousdlqin2yrs BOOLEAN,
         numberoftime30_59dayspastduenotworse INTEGER,
@@ -27,8 +27,8 @@ sql_debt = '''
       );
       '''
 
-sql_payment = '''
-      CREATE TABLE IF NOT EXISTS payment (
+sql_debt = '''
+      CREATE TABLE IF NOT EXISTS debt (
         customer_id INTEGER Not Null PRIMARY KEY,
         debtratio DOUBLE PRECISION,
         revolvingutilizationofunsecuredlines DOUBLE PRECISION,

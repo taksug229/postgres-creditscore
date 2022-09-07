@@ -1,6 +1,7 @@
 # Requirements
 
 - docker
+- Share IP address (to allow connections to Google Cloud SQL)
 
 # Set up
 
@@ -9,12 +10,12 @@ docker-compose up -d --build
 docker-compose up -d
 ```
 
-## Scripts for SQL
+## Run scripts for SQL
 
 ```bash
 docker compose exec python-analysis bash
 
-# Create Table
+# Create Empty Table
 python scripts/create_tables.py
 
 # Add Table
@@ -26,5 +27,7 @@ python scripts/drop_tables.py
 ```
 
 ## Jupyter
+
+While the `python-analysis` docker container is running, access below.
 
 - http://localhost:8888/

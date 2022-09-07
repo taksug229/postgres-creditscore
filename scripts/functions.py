@@ -63,8 +63,8 @@ class Tables:
         ]
 
         self.demographic_table = self.raw_df.loc[:, demographic_mask]
-        self.debt_table = self.raw_df.loc[:, payment_mask]
-        self.payment_table = self.raw_df.loc[:, debt_mask]
+        self.debt_table = self.raw_df.loc[:, debt_mask]
+        self.payment_table = self.raw_df.loc[:, payment_mask]
 
 
 def run_sql(sql_query: str):
