@@ -31,3 +31,6 @@ python scripts/drop_tables.py
 While the `python-analysis` docker container is running, access below.
 
 - http://localhost:8888/
+
+`notebook/SQL_example.ipynb`: Examples of how to access Google Cloud SQL tables.
+`notebook/EDA.ipynb`: Preliminary EDA notebook.
